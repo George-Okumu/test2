@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" /> </head>
+
+<body>
+    <!-- Navbar goes here -->
+    <nav class="nav_color md:hidden lg:hidden">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="http://aires.co.ke/" class="flex items-center px-4 m-4">
+                            <img src="./images/website_logo.svg" width="70px" />
+                        </a>
+                    </div>
+                </div>
+                <!-- menu button -->
+                <div class="flex items-center">
+                    <!--Notifications Button-->
+                    <button class="outline-none pr-2">
+                        <span class="sr-only">Notifications</span>
+                        <img src="./images/farm/u370.svg" alt="bell"/>
+                      </button>
+
+                    <!--hamburger button-->
+                    <button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="#fff"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+                </div>
+            </div>
+        </div>
+        <!-- Dropdown Context menu -->
+        <div class="hidden mobile-menu">
+            <div class="active text-center">
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-6/12 sm:w-4/12 px-4">
+                        <img src="./images/user_profile/u1363.svg" alt="My profile picture" class="shadow-lg rounded-full max-w-full h-auto align-middle border-none" />
+                    </div>
+                </div>
+                <div class="p-4 font-medium">
+                    <h3>George Okumu</h3>
+                    <h3>gokumu12@gmail.com</h3>
+                </div>
+            </div>
+            <ul class="text-center bg-white pt-6">
+                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white hover:bg-green-500 active font-semibold"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li><a href="#myprofile" class="block px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"><i class="fa fa-fw fa-user-circle"></i> My Profile</a></li>
+                <li><a href="#help" class="block px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"><i class="fa fa-fw fa-question-circle"></i>  Help</a></li>
+                <li><a href="#" class="block px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"><i class="fa fa-fw fa-sign-out"></i> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="md:hidden lg:hidden">
+        <div class="mt-32">
+            <h1 class="text-center uppercase font-medium tracking-wider">Welcome</h1>
+            <div class="flex justify-center p-8 transform scale-120">
+                <img src="images/farm/u234.svg" alt="Farm Logo">
+            </div>
+
+            <div>
+                <h3 class="text-center text-gray-700 p-2">Click&nbsp<span class="underline active_nav_button"><a href="farm_location.html">Farm</a></span>&nbspto get started</h3>
+                <div class="flex justify-center p-0">
+                    <div class="relative">
+                        <button class="block active w-full border px-4 py-2 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline hover:shadow-lg" type="button" onClick="window.location.href='./farm_location.html'"><span class="float-left">
+                            <svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="matrix(1 0 0 1 -10 -10 )">
+                                  <path d="M 10.7 9.4  L 20 9.4  L 20 10.7  L 10.6 10.7  L 10.6 20  L 9.4 20  L 9.4 10.6  L 0 10.6  L 0 9.4  L 9.4 9.4  L 9.4 0  L 10.7 0  L 10.7 9.4  Z " fill-rule="nonzero" fill="#fff" stroke="none" transform="matrix(1 0 0 1 10 10 )" />
+                                </g>
+                              </svg>
+                        </span><span class="pr-16 pl-4 text-white">Farm</span></button>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 border-l flex items-center px-2 text-white">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer md:hidden lg:hidden">
+        <div class="pb-8">
+            <h3 class="text-center text-gray-700">Continue to <span class="active_nav_button"><a href="profile.html">My profile</a></span> to complete registration</h3>
+        </div>
+        <div class="grid grid-cols-3 gap-0 divide-x-2 divide-gray-400/25 border-t border-gray-400/25">
+            <button class="active p-2">
+                <div class="flex">
+                    <img  src="./images/farm/umine.svg" alt="Farm Logo" />
+                    <span class="pl-2">Farm</span>
+                  </div>
+            </button>
+            <button class="p-2">Crop</button>
+            <button class="p-2">Soil</button>
+        </div>
+    </footer>
+</body>
+<script src="./Js/main.js"></script>
+
+</html>

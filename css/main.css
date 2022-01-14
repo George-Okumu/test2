@@ -1,0 +1,19 @@
+.active_nav_button {
+    color: #2f8d4b;
+}
+
+.active {
+    background-color: #2f8d4b;
+    color: #f1f1f1;
+}
+
+.nav_color {
+    background-color: #2f8d4b;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
