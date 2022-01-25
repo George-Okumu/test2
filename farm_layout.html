@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="aires Farm Welcome">
+    <meta name="author" content="aires">
+
+    <title>Farm Layout</title>
+
+    <link rel="shortcut icon" href="images/tittle_logo.svg" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="./images/website_logo.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="nav_color md:hidden lg:hidden">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="http://aires.co.ke/" class="flex items-center m-4">
+                            <img src="./images/website_logo.svg" width="70px" />
+                        </a>
+                    </div>
+                </div>
+                <!-- menu button -->
+                <div class="flex items-center">
+                    <!--Notifications Button-->
+                    <button class="outline-none pr-2">
+                        <span class="sr-only">Notifications</span>
+                        <img src="./images/farm/u370.svg" alt="bell"/>
+                      </button>
+
+                    <!--hamburger button-->
+                    <button class="outline-none" onclick="openNav()">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="#fff"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Dropdown Context menu -->
+    <div id="mobile-menu" class="overlay md:hidden lg:hidden">
+        <div class="overlay-content">
+            <div class="text-center profile">
+                <!--Closing button-->
+                <a href="javascript:void(0)" class="closebtn pt-0" onclick="closeNav()">&times;</a>
+                <div class="flex flex-wrap justify-center pt-20">
+                    <div class="w-6/12 sm:w-4/12 px-4">
+                        <img src="./images/user_profile/u1363.svg" alt="My profile picture" class="shadow-lg rounded-full max-w-full h-auto align-middle border-none" />
+                    </div>
+                </div>
+                <div class="p-4 font-medium text-white">
+                    <h3>George Okumu</h3>
+                    <h3>gokumu12@gmail.com</h3>
+                </div>
+            </div>
+            <div class="profile-properties">
+                <ul class="text-center pt-6">
+                    <li><a href="#index.html" class="block  px-2 py-4 transition duration-300"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="#myprofile" class="block px-2 py-4 transition duration-300"><i class="fa fa-fw fa-user-circle"></i> My Profile</a></li>
+                    <li><a href="#help" class="block px-2 py-4 transition duration-300"><i class="fa fa-fw fa-question-circle"></i>  Help</a></li>
+                    <li><a href="#" class="block px-2 py-4 transition duration-300"><i class="fa fa-fw fa-sign-out"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main class="md:hidden lg:hidden mx-4">
+        <!--Step ProgressBar-->
+        <div class="mt-4">
+            <div class="flex items-center">
+                <div class="flex items-center relative">
+                    <div class="rounded-full transition duration-500 ease-in-out h-4 w-4 py-1 border-2 nav_color">
+                    </div>
+                    <div class="absolute top-0 -ml-8 text-center pt-4 w-32 text-normal font-medium active_nav_button">
+                        Location
+                    </div>
+                </div>
+                <div class="flex-auto border-t-2 border-green-500"></div>
+                <div class="flex items-center active_nav_button relative">
+                    <div class="rounded-full transition duration-500 ease-in-out h-4 w-4 py-1 border-2 nav_color">
+                    </div>
+                    <div class="absolute top-0 -ml-14 text-center pt-4 w-32 text-normal font-medium active_nav_button">
+                        Details
+                    </div>
+                </div>
+                <div class="flex-auto border-t-2 transition duration-500 ease-in-out border-green-500"></div>
+                <div class="flex items-center active_nav_button relative">
+                    <div class="rounded-full transition duration-500 ease-in-out h-4 w-4 py-1 border-2 nav_color">
+                    </div>
+                    <div class="absolute top-0 -ml-20 text-center pt-4 w-32 text-normal font-medium active_nav_button">
+                        Layout
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Farming type dropdown-->
+        <div class="w-full dropdown__buttons button1">
+            <div class="relative w-full button1__main">
+                <select class="block appearance-none shadow-lg w-full bg-white border  px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline" required>
+                <option value="">Farming Type</option>
+                <option value="mixed">Mixed Farming</option>
+                <option value="mono">Mono</option>
+              </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 border-l flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <!--Constituency and ward button-->
+        <div class="layout__second__buttons">
+            <div class="flex gap-4 mine">
+                <div class="w-full">
+                    <div class="relative w-full">
+                        <input class="block shadow-lg w-full bg-white text-gray-700 border  px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline" type="number" placeholder="Farm Size" required>
+                        <div class="">
+                            <select class="absolute appearance-none rounded-r-lg bg-transparent border-l inset-y-0 right-0 outline-none flex items-center px-2 text-gray-400" required>
+                                        <option value="">acres</option>
+                                        <option value="acres">acres</option>
+                                        <option value="ha">ha</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="relative w-full">
+                        <div>
+                            <p class="block w-full bg-white border px-2 py-2 rounded-lg shadow shadow-lg leading-tight focus:outline-none focus:shadow-outline">
+                                <span class="text-gray-700">TonuiField:2</span>
+                            </p>
+                        </div>
+                        <div class="">
+                            <button class="absolute text-white rounded-r-xl nav_color border-l inset-y-0 right-0 outline-none flex items-center px-2" type="submit">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Farm usage progress state-->
+        <div class="mt-1">
+            <p class="font-bold text-l"> 8 acres of 10 used.</p>
+            <div class="relative pt-1 w-full">
+                <div class="overflow-hidden h-2 text-xs flex shadow-md bg-gray-100 rounded-full bg-white">
+                    <div style="width:80%" class="flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="doughnut__box">
+            <!--Farm size display area-->
+            <div class="border border-gray-200 border-b-8 rounded-lg border-t-0 border-l-4 border-r-4">
+                <div class="mx-4">
+                    <div class="container pt-2">
+                        <table class="w-full">
+                            <tbody>
+                                <tr class="divide-x divide-gray-400 border border-b-4">
+                                    <td class="px-2 py-2 text-normal text-gray-500">Maina</td>
+                                    <td class="px-2 py-2 text-normal text-gray-500">Kitui</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex justify-between pt-4">
+                        <div class="">
+                            <!--only farm and farm size display-->
+                            <div class="overflow-hidden rounded-lg">
+                                <table class="w-full">
+                                    <tbody>
+                                        <tr class="divide-x divide-gray-400 border border-b-2">
+                                            <td class="px-2 py-0 text-normal text-gray-500">George Farm</td>
+                                            <td class="px-2 py-0 text-normal text-gray-500">10 acres</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--Table for farm field that are being added-->
+                            <div class="pt-4">
+                                <table class="w-full">
+                                    <thead class="">
+                                        <th class="text-normal text-gray-500">Field Name</th>
+                                        <th class="text-normal text-gray-500">Field Size</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-normal text-gray-700">Field 1</td>
+                                            <td class="text-normal text-gray-700">4 acres</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-normal text-gray-700">Field 2</td>
+                                            <td class="text-normal text-gray-700">4 acres</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--The chart section-->
+                        <div class="w-1/4 pt-6">
+                            <canvas id="doughnut_chart"></canvas>
+                        </div>
+                    </div>
+
+                    <button class="border-2 border-green-500 hover:bg-green-500 hover:text-white bg-transparent  active_nav_button py-1 px-8 mb-4 mt-4">
+                    Reset
+                </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Cancel and Next buttons-->
+        <div class="flex justify-between mt-2">
+            <button class="bg-transparent hover:bg-green-500 hover:text-white border border-green-500 text-green-500 font-bold p-1 px-6 rounded" type="button">
+                        <a href="farm_details.html">Back</a>
+            </button>
+            <button class="bg-transparent hover:bg-green-500 hover:text-white border border-green-500 text-green-500 font-bold p-1 px-6 rounded" type="submit">
+                        <a href="farm_layout.html">Save</a>
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="footer md:hidden lg:hidden">
+        <div class="grid grid-cols-3 gap-0 divide-x-2 divide-gray-400/25 border-t border-gray-400/25">
+            <button class="active p-4">
+            <div class="flex">
+                <img  src="./images/farm/umine.svg" alt="Farm Logo" />
+                <span class="pl-2">Farm</span>
+              </div>
+        </button>
+            <button class="p-4">Crop</button>
+            <button class="p-4">Soil</button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+<script src="./Js/doughnut_chart.js"></script>
+<script src="./Js/main.js"></script>
+
+</html>

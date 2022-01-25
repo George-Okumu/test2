@@ -1,6 +1,7 @@
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
+function openNav() {
+    document.getElementById("mobile-menu").style.height = "100%";
+}
 
-btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-});
+function closeNav() {
+    document.getElementById("mobile-menu").style.height = "0%";
+}
