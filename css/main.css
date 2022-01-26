@@ -64,12 +64,12 @@
 }
 
 @media screen and (min-device-width: 460px) and (max-device-width: 767px) {
-    .button1 {
+    /* .button1 {
         display: flex;
         justify-content: center;
-    }
+    } */
     .button1__main {
-        width: 70%;
+        width: 50%;
     }
 }
 
@@ -84,7 +84,7 @@
         padding-top: 36px;
     }
     .dropdown__button2 {
-        padding-top: 20px;
+        padding-top: 12px;
     }
     .layout__second__buttons {
         padding-top: 12px;
@@ -129,15 +129,73 @@
     .doughnut__box {
         padding-top: 32px;
     }
+    .layout__second__buttons {
+        padding-top: 12px;
+    }
 }
 
-@media screen and (max-device-width:350px) and (max-height: 640px) {
+@media screen and (max-device-width:350px) and (min-height: 640px) {
     .mine {
         display: flex;
         flex-direction: column;
     }
-    .iframe {
+    iframe {
         height: 80%;
+    }
+}
+
+@media screen and (max-device-width:350px) and (max-height: 639px) {
+    .profile__image__div {
+        padding-top: 8px;
+    }
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 6%;
+        left: 0;
+        background-color: white;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    .overlay a {
+        font-size: 12px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 10px;
+        right: 35px;
+    }
+    .footer__button {
+        padding: 2px;
+    }
+    .dropdown__button2 {
+        padding-top: 6px;
+    }
+    .map__area {
+        padding-top: 1px;
+    }
+    iframe {
+        height: 100px;
+    }
+    .progress {
+        padding-top: 2px;
+    }
+    .mine {
+        gap: 6px;
+    }
+    .welcome__section {
+        margin-top: 20px;
+    }
+    .welcome__continue__note {
+        padding-top: 16px;
+    }
+    .layout__second__buttons {
+        padding: 4px;
+    }
+    .progress__state {
+        margin-top: 0px;
     }
 }
 
@@ -155,7 +213,7 @@
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
