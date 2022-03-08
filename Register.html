@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="aires Farm Welcome">
+    <meta name="author" content="aires">
+
+    <title>register</title>
+
+    <link rel="shortcut icon" href="images/tittle_logo.svg" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="./images/website_logo.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+</head>
+
+<body>
+    <!-- Register component -->
+    <section class="h-screen font-sans login">
+        <div class="container mx-auto h-full flex flex-1 justify-center items-center">
+            <div class="w-full max-w-lg">
+                <div class="max-w-lg m-4 p-10 bg-white  shadow-2xl rounded ">
+                    <div class="p-8">
+                        <div class="flex justify-center transform scale-120">
+                            <img src="./images/loginRegister.svg" width="70px" />
+                        </div>
+                        <h1 class="text-center text-gray-900 text-lg font-bold">Create an Account</h1>
+                    </div>
+                    <form>
+                        <div class="flex flex-wrap">
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <!-- <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            First Name
+                          </label> -->
+                                <input class="shadow appearance-none block w-full text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="first-name" type="text" placeholder="First Name" required>
+
+                            </div>
+                            <div class="errorMessages"></div>
+                            <div class="w-full md:w-1/2 px-3">
+                                <!-- <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                            Last Name
+                          </label> -->
+                                <input class="shadow appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:shadow-outline " id="last-name" type="text" placeholder="Last Name" required>
+                            </div>
+                            <div class="errorMessages"></div>
+                        </div>
+                        <div class="mt-2 pt-2 ">
+                            <label class="block text-sm text-white "></label>
+                            <input class="shadow appearance-none border rounded block  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="phone" id="phoneNumber" placeholder="Mobile Phone Number" arial-label="password" required>
+                        </div>
+                        <div class="mt-2 pt-4 ">
+                            <label class="block text-sm text-white " for="email "></label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" id="email" placeholder="Email address or username" aria-label="email" required>
+                        </div>
+                        <div class="mt-2 pt-2">
+                            <label class="block text-sm text-white "></label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" id="password" placeholder="Password" arial-label="password" required>
+                        </div>
+                        <div class="mt-2 pt-2">
+                            <label class="block text-sm text-white"></label>
+                            <input class="shadow appearance-none border rounded block w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" id="repeatPassword" placeholder="Confirm password" arial-label="confirm password" required>
+                        </div>
+                        <div class="text-center mt-2">
+                            <button class="px-4 py-1 text-white font-light tracking-wider bg-green-600 hover:bg-blue-500 rounded" type="submit">Register</button>
+                        </div>
+                    </form>
+                    <div class="p-8">
+                        <p>Already have an account? <a class="font-bold text-sm text-500 text-green-700 underline hover:text-red-400" href="login.html">Sign in</a>
+                        </p>
+                    </div>
+
+                </div>
+                <p class="text-white pt-8 pl-8">By registering with us, you agree to our <span class="underline">terms of use</span></p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
